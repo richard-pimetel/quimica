@@ -1,0 +1,610 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    padding: 1vh;
+    background: linear-gradient(
+        90deg,
+        #b588ca,
+        #C489E1,
+        #BD71E3,
+        #8E45B2
+    );
+}
+
+header img{
+    min-width: 10vh;
+    width: 80px;
+    min-height: 10vh;
+    height: 80px;
+}
+
+header nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    align-items: center;
+    font-size: 30px;
+}
+
+header nav ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(to right, #c890e1, #a758cf, #a147ce, #9a0ee0);
+}
+
+h1{
+    font-size: 100px;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-inline: 1vh;
+    padding-top: 10vh;
+}
+
+.imagensSeparadas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30%;
+}
+
+.caixaDetexto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+}
+
+.textos1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textos1 div{
+    font-size: 28px;
+    width: 100%;
+    height: 48%;
+    padding: 10px;
+    background: linear-gradient(
+        180deg,
+        #D8ACED,
+        #C489E1,
+        #BD71E3,
+        #8E45B2
+    );
+}
+
+.setas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1vh;
+}
+
+.meioSS{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.textoSetas{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    background-color: #8d18db;
+    border-radius: 50px;
+}
+
+.textoSetas h3{
+    text-align: center;
+}
+
+.seta11{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#setaCima :first-child{
+    rotate: 180deg;
+}
+
+#setaBaixo :first-child{
+    rotate: 180deg;
+}
+
+
+
+/*  */
+
+.titulos{
+    position: absolute;
+    background: linear-gradient(
+        180deg,
+        #D8ACED,
+        #C489E1,
+        #BD71E3,
+        #8E45B2
+    );
+    width: 504px;
+    height: 139px;
+    font-size: 36px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 101px;
+}
+
+.titulos h2{
+    text-align: center;
+}
+
+#Experimentos .titulos{
+    width: 504px;
+    top: calc(10vh + 10px);
+    left: 2vh;
+}
+
+
+
+.elementosIMG1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 25%;
+}
+
+.meioEx{
+    width: 100%;
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10vw;
+}
+
+
+
+.textoPadrao{
+    background-image: url(./img/textoPadrao.png);
+    background-size: cover;
+    width: 664px;
+    height: 444.83px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.textoPadrao p{
+    width: 100%;
+    height: 100%;
+    font-size: 44px;
+}
+
+.video{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+
+/* */
+
+#Programacao .titulos{
+    top: 25vh;
+    left: 50vw;
+    transform: translate(-50%, -50%)
+}
+
+
+#Programacao .textoPadrao{
+    width: 626px;
+    height: 540px;
+    
+}
+
+.textos2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textos2 ol *{
+    font-size: 20px;
+}
+
+.textos2 ol{
+    padding: 10px;
+}
+
+.textos2 ul{
+    padding: 10px;
+}
+
+.textos2 li{
+    padding: 10px;
+    list-style: initial;
+}
+
+
+
+/*  */
+
+#Tabela{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#Tabela .titulos{
+    display: flex;
+    width: 577px;
+    top: 25vh;
+    left: 50vw;
+    transform: translate(-50%, -50%)
+}
+
+.textoEelementos{
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    padding-inline: 10vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.elementosTabela{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.elementosTabela img{
+    position:absolute;
+}
+
+.frasco{
+    width: 273px;
+    height: 282px;
+    left: 5%;
+    bottom: 10px;
+}
+
+.frascos{
+    width: 169px;
+    height: 179px;
+    right: 20%;
+    top: 10%;
+}
+
+.texto1{
+    width: 617px;
+    height: 521px;
+    font-size: 28px;
+    padding: 10px;
+    background-color: #8219DE;
+    border-radius: 34px;
+}
+
+/*  */
+
+
+#Ligacoes{
+    display: flex;
+    gap: 50px;
+    align-items: end;
+    padding: 10px;
+    padding-inline: 5vw;
+}
+
+#Ligacoes .titulos{
+    display: flex;
+    width: 38%;
+    top: calc(10vh + 10px);
+    left: 5vh;
+}
+
+
+#textoPadrao1{
+    width: 40%;
+    height: 692px;
+}
+
+#textoPadrao1 *{
+    font-size: 30px;
+}
+
+#textoPadrao2{
+    font-size: 28px;
+    width: 40%;
+    height: 943px;
+}
+
+#textoPadrao2 *{
+    font-size: 34px;
+}
+
+.imgTexto{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#textoPadrao3{
+    font-size: 28px;
+    width: 100%;
+    height: 521px;
+}
+#textoPadrao3 *{
+    font-size: 34px;
+}
+
+
+@media (max-width:750px){
+    header nav{
+        overflow: hidden;
+    }
+
+    header nav ul{
+        width: 100%;
+        gap: 10px;
+        overflow: auto;
+        font-size: 20px;
+    }
+
+    header nav ul li{
+        width: auto;
+    }
+
+    h1{
+        font-size: 50px;
+        width: 40%;
+        text-align: center;
+    }
+
+    section{
+        height: auto;
+    }
+    
+    #Home .imagensSeparadas{
+        display: flex;
+        height: 200px;
+    }
+
+    #Home .imagensSeparadas img{
+        width: 30%;
+    }
+    
+    .caixaDetexto{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    
+    .textos1{
+        gap: 40px;
+    }
+    
+    .textos1 div{
+        height: auto;
+    }
+    
+    .setas{
+        display: none;
+    }
+
+    .elementosIMG1, .imagensSeparadas{
+        display: none;
+    }
+
+    main img{
+        display: none;
+    }
+
+
+    /*  */
+
+    .titulos{
+        width: 50%;
+        height: 100px;
+        font-size: 18px;
+        border-radius: 50px;
+        top: 25vh;
+        left: 50vw;
+        transform: translate(-50%, -50%)
+    }
+
+    #Experimentos .titulos{
+        width: 50%;
+        top: 25vh;
+        left: 50vw;
+        transform: translate(-50%, -50%)
+    }
+
+    #Tabela .titulos{
+        width: 50%;
+
+    }
+
+    #Ligacoes .titulos{
+        width: 50%;
+        top: 25vh;
+        left: 50vw;
+        transform: translate(-50%, -50%)
+    }
+
+    /*  */
+
+    .elementosIMG1{
+        display: none;
+    }
+    
+    .meioEx{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        gap: 50px;
+        padding-left: 5vw;
+        padding-top: 25vh;
+    }
+    
+    .textoPadrao{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .textoPadrao p{
+        width: 100%;
+        height: 100%;
+        font-size: 24px;
+    }
+    
+    .video{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video video{
+        width: 90%;
+    }
+
+    /* */
+
+    #Programacao .textoPadrao{
+        width: 100%;
+        height: auto;
+    }
+    
+    .textos2{
+        padding-top: 25vh;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 20px;
+    }
+
+    /*  */
+
+    #Tabela{
+        padding-top: 30vh;
+        align-items: center;
+    }
+    
+    .textoEelementos{
+        flex-direction: column;
+        padding-inline: 10px;
+        padding-top: 40px;
+        justify-content: center
+    }
+    
+    .texto1{
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    /*  */
+
+
+    #Ligacoes{
+        padding-top: 35vh;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }   
+    
+    #textoPadrao1{
+        font-size: 24px;
+        width: 90%;
+        height: auto;
+    }
+    
+    #textoPadrao2{
+        font-size: 24px;
+        width: 90%;
+        height: auto;
+    }
+    
+    .imgTexto{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #textoPadrao3{
+        font-size: 24px;
+        width: 90%;
+        height: auto;
+    }
+
+
+}
